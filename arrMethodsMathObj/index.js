@@ -82,7 +82,8 @@ let valoresMapeados = myArray.map(numero => numero * 2) // .map(); itera todos l
 let valoresReduce = myArray.reduce((acc, num) => acc + num) // .reduce(); Nos permite, dada una función, “reducirlo” los elementos de un arreglo en un nuevo y único valor. (Acumulador,Elemento)
 // 150
 
-// ========================= OBJETO MATH ============================ 
+
+// ========================== OBJETO MATH ============================ 
 let numeroMath = Math.sqrt(25) // Raiz Cuadrada positiva de un numero
 // 5
 let numeroMath2 = Math.cbrt(25) // Raiz Cubica de un numero
