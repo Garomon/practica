@@ -41,14 +41,18 @@ const clasesUniversidad = (materia) => {
 
 
 const inscribir = (alumno, materia) => {
-  
-    if(alumnos[materia].length >= 20){
+
+    if(alumnos[materia][alumno] === alumno){
+        document.write('Ya te encuentras inscrito')
+    }else if(alumnos[materia].length >= 20){
         document.write(`Lo siento ${alumno}, las clases de la materia ${materia} ya estan llenas <br>`)
     } else if (alumnos[materia].length < 20) {
         document.write(`Inscrito en la materia <b>${materia}</b> <br>
         <br>`)
         alumnos[materia].push(`${alumno}`)
     } 
+
+  
 }
 
 
