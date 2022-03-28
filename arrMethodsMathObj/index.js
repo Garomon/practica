@@ -71,6 +71,7 @@ let resultadoSlice = nombres.slice(0,3) // .slice() devuelve una copia de una pa
 // ========================= Metodos de Iteracion ============================ 
 
 let myArray = [10,20,30,40,50]
+let nombress = ["Garo", "Tono", "Angela", "Pepe", "Alberto"]
 
 let valoresFiltrados = myArray.filter(numero => numero <= 30) // .filter(); itera sobre todo el array y retorna un nuevo arreglo con los elementos que cumplen con los requerimientos 
 // [ 10, 20, 30 ]
@@ -80,7 +81,6 @@ let valoresMapeados = myArray.map(numero => numero * 2) // .map(); itera todos l
 
 let valoresReduce = myArray.reduce((acc, num) => acc + num) // .reduce(); Nos permite, dada una función, “reducirlo” los elementos de un arreglo en un nuevo y único valor. (Acumulador,Elemento)
 // 150
-
 
 // ========================= OBJETO MATH ============================ 
 let numeroMath = Math.sqrt(25) // Raiz Cuadrada positiva de un numero
@@ -101,5 +101,4 @@ let numeroMath9 = Math.trunc(25.7) // Elimina los decimales
 //25
 
 
-console.log(numeroMath9)
 
