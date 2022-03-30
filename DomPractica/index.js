@@ -60,7 +60,15 @@ Document - Metodos de seleccion de elementos
         -createElement() - Crea nuevo elemento "li" "p" "div" etc....
         -createTextNode() - Crea un elemento nodo de texto
         -appendChild() - Inserta un hijo dentro de un elemento
-        -createDocumentFragment() -
+        -createDocumentFragment() - Crea un fragmento de un elemento vacio y lo llena para despues haer appendChild una vez y no cada vez en la iteracion
+
+    - Obtencion y modificacion de Childs
+        -firstChild - Tiene en cuenta los nodos incluyendo de espacio Text
+        -lastChild - Tiene en cuenta los nodos incluyendo de espacio Text
+        -firstElementChild
+        -lastElementChild 
+        -childNode - Tiene en cuenta los nodos incluyendo de espacio Text
+        -children
 */
 
 const contenedor = document.getElementById('contenedor');
@@ -74,3 +82,7 @@ for(i = 0; i < 20; i++){
 }
 
 contenedor.appendChild(fragmento);
+
+const primerHijo = contenedor.childNodes;
+
+console.log(primerHijo)
