@@ -69,6 +69,22 @@ Document - Metodos de seleccion de elementos
         -lastElementChild 
         -childNode - Tiene en cuenta los nodos incluyendo de espacio Text
         -children
+
+    -   * Metodos de Childs * 
+        -replaceChild() (elemento agregar, elemento remplazar)
+        -removeChild()  (elemento a remover)
+        -hasChildNodes() //verifica si tiene elemento hijo o no // true - false
+
+
+    - Obtencion de parents
+        -parentElement
+        -parentNode
+
+    - Obtencion de hermanos siblings
+        -nextSibling
+        -previousSibling
+        -nextElementSibling()
+        -previousElementSibling()
 */
 
 const contenedor = document.getElementById('contenedor');
@@ -83,6 +99,9 @@ for(i = 0; i < 20; i++){
 
 contenedor.appendChild(fragmento);
 
-const primerHijo = contenedor.childNodes;
 
-console.log(primerHijo)
+const parrafo = document.querySelector("h2")
+const primerHijo = contenedor.firstElementChild.outerHTML;
+const primerHijo_2 = document.createElement("H2")
+primerHijo_2.innerHTML = "Titulo cambiado"
+contenedor.replaceChild(primerHijo_2, parrafo)
