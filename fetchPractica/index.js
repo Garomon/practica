@@ -1,10 +1,5 @@
 
-
-
-
-
-let pokemon = prompt("Que pokemon quieres buscar ?")
-
+let pokemon = "charizard"
 let url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
 async function traerPokemon(){
@@ -22,9 +17,9 @@ async function traerPokemon(){
 }
 
 function mostarNombre(n){
-    document.getElementById('mensaje').innerHTML = n.name
+    document.querySelector('#mensaje').innerHTML = `Hola soy ${n.name} y mi experiencia base es de ${n.base_experience} y mido ${n.height} <br>
+     Mi ataque favorito se llama ${n.moves[0].move.name}
+     `
 }
 
-
 traerPokemon().then(mostarNombre)
-
