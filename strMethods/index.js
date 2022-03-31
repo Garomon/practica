@@ -1,7 +1,7 @@
 
 let cadena = 'cadena de prueba';
 let cadena2 =" cadena 2";
-let numero = 300;
+let numero = 500;
 let array = ["pedro", "jorge", 30]
 
 let resultado = cadena.concat(cadena2); // .concat() - junta dos o mas cadenas y retorna una nueva 
